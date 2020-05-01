@@ -22,3 +22,5 @@ Auth::routes();
 Route::get('/home', 'HomeController@index')->name('home');
 
 Route::get('/contacts', 'ContactsController@get');
+
+Route::get('/contacts/{id}', 'ContactsController@getMessagesFor');
